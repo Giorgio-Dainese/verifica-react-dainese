@@ -25,6 +25,16 @@ function Login() {
     setPassword(event.target.value);
   }
 
+    //Non ho avuto tempo per finire di scrivere la funzione
+
+  /* function verificaCredenzialiLogin(){
+    const storedEmail = localStorage.getItem('email');
+    const storedPassword = localStorage.getItem('password');
+    if(storedEmail == email && storedPassword == password){
+      //Reindirizzo l'utente alla pagina Dashboard
+    } else alert("Utente non trovato")
+  } */
+
   return (
     <div>
       <Header title="Login" icon={<Signup />} to="/signup" />
@@ -45,7 +55,7 @@ function Login() {
           </div>
           {/* Button div */}
           <div className="w-full">
-            <Button title="Login" />
+            <Button title="Login" /* onClick={verificaCredenzialiLogin} *//>
           </div>
         </form>
       </Card>
